@@ -1,0 +1,27 @@
+/*=====================================
+        CREATE COMMUNITY BLOG
+=====================================*/
+
+.create-blog-form {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .create-blog-form input,
+    .create-blog-form textarea,
+    .create-blog-form input[type="file"] {
+        width: 100%;
+    }
+
+    .create-blog-form textarea {
+        min-height: 220px;
+        resize: vertical;
+    }
+
+    .create-blog-form input[type="file"] {
+        cursor: pointer;
+    }

@@ -1,0 +1,382 @@
+/*=====================================
+        LOGIN PAGE
+=====================================*/
+
+
+
+
+
+
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 70px;
+    align-items: center;
+}
+
+.brand {
+    margin-bottom: 18px;
+}
+
+.student-image {
+    width: 370px;
+    max-width: 100%;
+    align-self: center;
+    margin: 20px auto;
+}
+
+.main-title {
+    font-weight: 800;
+    line-height: 1.15;
+    line-height: 1.05;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.description {
+    max-width: 520px;
+    text-align: center;
+    font-size: 17px;
+    color: #cbd5e1;
+    margin-bottom: 22px;
+}
+
+.feature-box {
+    width: 100%;
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+    .feature-box div {
+        padding: 16px;
+        border-radius: 14px;
+        background: rgba(255,255,255,.05);
+        border: 1px solid rgba(255,255,255,.08);
+        color: white;
+        font-weight: 600;
+        transition: .3s;
+        text-align: center;
+    }
+
+        .feature-box div:hover {
+            transform: translateY(-6px);
+            border-color: #60a5fa;
+            box-shadow: 0 0 20px rgba(59,130,246,.3);
+        }
+
+.quote-box {
+   max-width:520px;
+width:100%;
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+    .quote-box h3 {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .quote-box p {
+        color: #cbd5e1;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    .quote-box span {
+        display: block;
+        margin-top: 10px;
+        color: #8b5cf6;
+        font-size: 13px;
+    }
+
+.right-panel {
+    width: 430px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-card {
+    width: 380px;
+    padding: 24px;
+    border-radius: 28px;
+    background: linear-gradient( 145deg, rgba(30,40,90,.58), rgba(20,15,45,.48) );
+    backdrop-filter: blur(22px);
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 0 40px rgba(59,130,246,.20), 0 0 80px rgba(168,85,247,.22);
+}
+
+
+
+/*=====================================
+        LOGIN TEXT
+=====================================*/
+
+.welcome {
+    text-align: center;
+    color: white;
+   
+    font-weight: 700;
+    
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.login-text {
+    text-align: center;
+    color: #94a3b8;
+
+    
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+
+
+/*=====================================
+        INPUTS
+=====================================*/
+
+.login-card input {
+    width: 100%;
+   
+  
+    padding: 0 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.05);
+    color: white;
+  
+    box-sizing: border-box;
+    transition: .3s;
+    height: 42px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+    .login-card input::placeholder {
+        color: #94a3b8;
+    }
+
+    .login-card input:focus {
+        outline: none;
+        border-color: #8b5cf6;
+        box-shadow: 0 0 18px rgba(139,92,246,.30);
+        background: rgba(255,255,255,.08);
+    }
+
+
+
+/*=====================================
+        LOGIN BUTTON
+=====================================*/
+
+.login-card button {
+    width: 100%;
+   
+
+    border-radius: 16px;
+  
+    font-weight: 700;
+    background: linear-gradient( 135deg, #3b82f6, #8b5cf6 );
+    height: 42px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+    .login-card button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 30px rgba(59,130,246,.35), 0 0 50px rgba(168,85,247,.35);
+    }
+
+    
+
+
+/*=====================================
+        LINKS
+=====================================*/
+
+.register-link {
+    text-align: center;
+    margin-top: 12px;
+    color: #60a5fa;
+    cursor: pointer;
+    font-size: 13px;
+    transition: .3s;
+}
+
+    .register-link:hover {
+        color: #c084fc;
+        text-decoration: underline;
+    }
+
+
+
+
+/*=====================================
+        ANIMATION
+=====================================*/
+
+.login-card,
+.left-panel {
+    animation: fadeUp .8s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/*=====================================
+        FLOATING IMAGE
+=====================================*/
+
+.student-image {
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/*=====================================
+        LOGIN CARD EFFECT
+=====================================*/
+
+.login-card {
+    position: relative;
+    overflow: hidden;
+}
+
+    .login-card::before {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: -170px;
+        right: -170px;
+        border-radius: 50%;
+        background: rgba(255,255,255,.05);
+    }
+
+    .login-card::after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        bottom: -130px;
+        left: -130px;
+        border-radius: 50%;
+        background: rgba(59,130,246,.08);
+    }
+
+
+/*=====================================
+        RESPONSIVE
+=====================================*/
+
+@media (max-width:1100px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 28px 38px;
+    }
+
+    .left-panel {
+        align-items: center;
+        text-align: center;
+    }
+
+    .student-image {
+        width: 300px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .main-title {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 8px 0;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 460px;
+    }
+}
+
+
+
+.login-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, rgba(59,130,246,.35), transparent 28%), radial-gradient(circle at top right, rgba(168,85,247,.35), transparent 30%), linear-gradient(135deg,#050816,#0b1120,#050816);
+    overflow: hidden;
+}
+
+
+.campus,
+.connect {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.campus {
+    color: white;
+}
+
+.connect {
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6,#ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

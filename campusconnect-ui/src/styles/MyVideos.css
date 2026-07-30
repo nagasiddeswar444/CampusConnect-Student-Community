@@ -1,0 +1,223 @@
+/*=====================================
+        MY VIDEOS PAGE
+=====================================*/
+
+/*=====================================
+        VIDEO PLAYER
+=====================================*/
+
+.video-player {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 16px;
+    margin: 20px 0;
+    background: #000;
+    object-fit: contain;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 0 25px rgba(59,130,246,.18);
+}
+
+/*=====================================
+        EMPTY STATE
+=====================================*/
+
+.empty-state h4 {
+    margin-top: 18px;
+    color: #a78bfa;
+    font-weight: 600;
+}
+
+/*=====================================
+        EDIT MODAL
+=====================================*/
+
+.modal-box h2 {
+    margin-bottom: 20px;
+}
+
+.modal-box input,
+.modal-box textarea {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/*=====================================
+        DELETE MODAL
+=====================================*/
+
+.delete-modal h2 {
+    margin-bottom: 15px;
+}
+
+.delete-modal p {
+    margin-bottom: 15px;
+}
+
+.delete-modal h4 {
+    margin-bottom: 20px;
+    color: #c4b5fd;
+}
+
+/*=====================================
+        RESPONSIVE
+=====================================*/
+
+@media (max-width:768px) {
+
+    .video-player {
+        max-height: 260px;
+    }
+}
+
+
+
+.video-card {
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 22px;
+    background: linear-gradient( 145deg, rgba(20,30,70,.55), rgba(18,15,45,.45) );
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 0 30px rgba(59,130,246,.18), 0 0 60px rgba(168,85,247,.18);
+    transition: .35s;
+}
+
+
+    .video-card:hover {
+        transform: translateY(-6px);
+        border-color: #c084fc;
+        box-shadow: 0 0 35px rgba(59,130,246,.30), 0 0 70px rgba(192,132,252,.30);
+    }
+
+
+
+    .video-card h3 {
+        font-size: 26px;
+        margin-bottom: 12px;
+        color: white;
+    }
+
+
+
+    .video-card p {
+        color: #cbd5e1;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    .video-card small {
+        display: block;
+        margin-top: 15px;
+        color: #8ec5ff;
+        font-weight: 600;
+    }
+
+
+    .video-card input {
+        width: 100%;
+        margin-top: 18px;
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,.08);
+        background: rgba(255,255,255,.04);
+        color: white;
+    }
+
+
+        .video-card input:focus {
+            border-color: #c084fc;
+            box-shadow: 0 0 18px rgba(192,132,252,.25);
+            outline: none;
+        }
+
+
+
+    .video-card video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        border-radius: 14px;
+        background: #000;
+        border: 1px solid rgba(255,255,255,.08);
+        box-shadow: 0 0 25px rgba(59,130,246,.18);
+    }
+
+
+.empty-state {
+    text-align: center;
+    padding: 45px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.04);
+    border: 1px dashed rgba(255,255,255,.12);
+}
+
+.comment-section {
+    margin-top: 28px;
+}
+
+
+.pinned-video-card {
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 22px;
+    background: linear-gradient( 145deg, rgba(20,30,70,.55), rgba(18,15,45,.45) );
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 0 30px rgba(59,130,246,.15), 0 0 60px rgba(168,85,247,.15);
+    transition: .35s;
+}
+
+    .pinned-video-card:hover {
+        transform: translateY(-6px);
+        border-color: #c084fc;
+    }
+
+
+
+/*=====================================
+        VIDEO ACTION BUTTONS
+=====================================*/
+
+.video-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+    .video-actions .action-btn,
+    .video-actions .delete-btn {
+        width: 150px;
+        height: 48px;
+        border-radius: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    /* Edit */
+
+    .video-actions .action-btn {
+        border: none;
+        color: white;
+        background: linear-gradient(135deg,#2563eb,#7c3aed);
+        box-shadow: 0 0 18px rgba(59,130,246,.25);
+    }
+
+        .video-actions .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 28px rgba(139,92,246,.35);
+        }
+
+    /* Delete */
+
+    .video-actions .delete-btn {
+        border: none;
+        color: white;
+        background: linear-gradient(135deg,#ef4444,#dc2626);
+        box-shadow: 0 0 18px rgba(239,68,68,.30);
+    }
+
+        .video-actions .delete-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 28px rgba(239,68,68,.45);
+        }

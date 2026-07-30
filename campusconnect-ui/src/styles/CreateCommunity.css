@@ -1,0 +1,126 @@
+
+
+
+
+.create-community-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 24px;
+    background: linear-gradient( 145deg, rgba(25,35,85,.55), rgba(20,15,45,.45) );
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 0 40px rgba(59,130,246,.18), 0 0 70px rgba(168,85,247,.18);
+}
+
+    .create-community-form input {
+        height: 52px;
+        padding: 0 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,.08);
+        background: rgba(255,255,255,.05);
+        color: white;
+        font-size: 15px;
+        transition: .3s;
+    }
+
+
+
+        .create-community-form input:focus {
+            outline: none;
+            border-color: #c084fc;
+            box-shadow: 0 0 18px rgba(192,132,252,.25);
+        }
+
+    .create-community-form textarea {
+        min-height: 90px;
+        padding: 18px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,.08);
+        background: rgba(255,255,255,.05);
+        color: white;
+        resize: vertical;
+    }
+
+
+        .create-community-form textarea:focus {
+            outline: none;
+            border-color: #c084fc;
+            box-shadow: 0 0 20px rgba(168,85,247,.28);
+        }
+
+
+
+    .create-community-form input[type="file"] {
+        padding: 14px;
+        cursor: pointer;
+    }
+
+
+    .create-community-form .action-btn {
+        width: 260px;
+        height: 46px;
+        margin: 8px auto 0;
+        display: block;
+    }
+
+
+.community-page-title {
+    font-size: 36px;
+    margin-bottom: 2px;
+    
+    text-align: center;
+    
+    font-weight: 700;
+    
+    background: linear-gradient( 90deg, white, #dbeafe, #c084fc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.create-community-form input,
+.create-community-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.community-page-title {
+    text-align: center;
+}
+
+
+
+.back-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,.08);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 12px;
+}
+
+    .back-btn:hover {
+        background: #8b5cf6;
+    }
+
+
+.create-community-page {
+    padding: 18px 35px 18px;
+}
+
+.community-page-subtitle {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #bfc8d8;
+    max-width: 650px;
+    margin: 0 auto 14px;
+}
